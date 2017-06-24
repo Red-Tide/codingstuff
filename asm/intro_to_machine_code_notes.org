@@ -1,0 +1,26 @@
+* Introduction to Assembly:
+
+** Disassembling C code with GDB
+C files must be compiled with the -g flag in gcc in order to be analyzed with gdb.
+Once you have done this call the executable file with gdb
+
+Example:
+
+gdb a.out
+
+*** List Source Code
+Once you have the program running in GDB there are several options:
+
+list or l: will list the program's source code defaults to 10 lines
+additional options such as specifying a function name or the line number with first,last are possible
+
+set listsize <count>: will change the default number of lines
+list +: lists the next set of lines
+list -: lists the last set of lines
+*** Set Breakpoints 
+You can set a breakpoint with
+break <linenumber>: alternatively just b
+or you can simply call the name of the function as an argument
+b myfunc
+*** Curses Based Debugging
+You start curses based debugging with tui e or alternatively run gdb as gdb -tui

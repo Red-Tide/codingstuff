@@ -1,0 +1,87 @@
+
+* Text Modifications 
+
+*Bold* /italics/ =verbatim= +strikethrough+ ~code~ _underlined_
+
+- bulleted
+- list
+- items
+
+* Links
+
+~Cntrl c Cntrl l~
+To insert Links
+[[http://www.google.ca][Link to the Google]]
+
+You can also link to inside source files, this needs to be investigated...
+[[file:nullpointer.c][Nullpointer]]
+* Tables
+
+Expand this section
+
+|------+------|
+| Some | Data |
+|------+------|
+|   12 | hah  |
+|   13 | blah |
+|------+------|
+
+* Export to Other Formats
+
+Expand this section
+
+#+TITLE: Introduction to Org-Mode
+#+OPTIONS: toc:nil
+
+* Source Code
+
+- Type >s<tab> as a shortcut to create SRC block
+- SRC blocks can be evaluated if you set it up
+ 
+
+ #+BEGIN_SRC c
+int x = 12;
+printf("%d \n",x);
+ 
+ #+END_SRC
+
+* Latex Integration
+
+\alpha \rightarrow \beta
+
+\begin{align*}
+3*2+1 &= 6+1 \\
+&= 7
+\end{align*}
+
+* Literate Programming
+
+Expand this section and demonstrate how to execute a document full of evaluated code explained piping between programs and 
+
+* Todo Lists
+
+- cntrl c, cntrl t cycles between todo done and no todo
+ 
+** TODO explain todo lists
+** DONE cycle through states
+   CLOSED: [2017-06-23 Fri 03:03]
+
+- set deadlines with cntrl c, cntrl d
+
+** TODO Set a deadline for todo
+   DEADLINE: <2017-07-26 Wed>
+
+- toggle dates by holding shift pressing up, down side to side
+- you can nest todo lists
+
+Expand to include agenda stuff
+
+* Captures
+
+Expand this section
+
+* Other Stuff Worth Exploring
+
+- org drill
+- beamer
+- bootstrap html output
